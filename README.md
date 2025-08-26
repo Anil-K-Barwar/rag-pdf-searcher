@@ -5,17 +5,18 @@ A Retrieval-Augmented Generation (RAG) project to search through PDF documents u
 ---
 
 ## Project Structure
-
+```text
 rag-pdf-searcher/
 ├── data/     # PDFs to be loaded
 ├── notebooks/ # experiments and testing
 ├── src/
-│ ├── loader.py    # load PDFs
-│ ├── embedder.py    # generate embeddings
+│ ├── loader.py    # load PDFs into text chunks
+│ ├── embedder.py    # generate embeddings using sentence-transformers
 │ ├── retriever.py    # query FAISS for relevant chunks
 │ └── app.py         # Streamlit UI (to be implemented)
 ├── README.md
 └── requirements.txt
+```
 
 ---
 
