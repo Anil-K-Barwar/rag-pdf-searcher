@@ -1,0 +1,27 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+.env
+.venv
+env/
+venv/
+rag_env/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore local data files (PDFs etc.)
+data/
+outputs/
+
+# Ignore FAISS index files (rebuild locally)
+*.faiss
+*.npy
