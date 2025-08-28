@@ -1,3 +1,7 @@
+
+# Ignore test script
+**/test.py
+
 # Ignore Python cache
 __pycache__/
 *.pyc
