@@ -1,8 +1,19 @@
 # src/retriever.py
 
 import os
+import warnings
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
+
+# Suppress TensorFlow logs
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+# Suppress HuggingFace parallelism warning
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+# Suppress FutureWarnings
+warnings.simplefilter("ignore", category=FutureWarning)
+### 
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+warnings.filterwarnings("ignore", category=UserWarning)
 
 # Define paths
 OUTPUT_DIR = "outputs"
